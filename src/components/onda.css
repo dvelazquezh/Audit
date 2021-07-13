@@ -1,0 +1,38 @@
+/* #wave {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background: #33f;
+    bottom: 200px;
+    z-index: -1;
+  }
+  
+  #wave:before {
+          content: "";
+          display: block;
+          position: absolute;
+          border-radius: 100% 50%;
+          width: 1200px;
+      height: 200px;
+      background-color: #f3f4f6;
+      left: 500px;
+      bottom: 150px;
+  }
+  
+  #wave:after {
+          content: "";
+          display: block;
+          position: absolute;
+          border-radius: 100%;
+          transform: rotate(19deg);
+          width: 600px;
+      height: 350px;
+      background-color: #f3f4f6;
+      left: -50px;
+      bottom: 160px;
+  }
+   */
+
+   .posicion{
+    z-index: -1;
+   }
