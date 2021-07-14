@@ -8,6 +8,9 @@ export const types = {
     uiRemoveError: '[UI] Remove Error',
 
     uiStartLoading: '[UI] Start Error',
-    uiFinishLoading: '[UI] Finish Error'
+    uiFinishLoading: '[UI] Finish Error',
 
+
+    auditCountQuestion: '[AUDIT] Count Questions',
+    auditCountQuestionLess: '[AUDIT] Count Questions less',
 }

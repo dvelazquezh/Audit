@@ -36,3 +36,10 @@
    .posicion{
     z-index: -1;
    }
+
+   .neumo{
+    border-radius: 9px;
+    background: #ffffff;
+    box-shadow:  -9px 9px 13px #e6e6e6,
+                 9px -9px 13px #ffffff;
+   }
