@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import Card from '@material-tailwind/react/Card';
 import CardHeader from '@material-tailwind/react/CardHeader';
 import CardBody from '@material-tailwind/react/CardBody';
-import Image from '@material-tailwind/react/Image';
-import Progress from '@material-tailwind/react/Progress';
 import img1 from 'assets/welcome/img1.png';
 import img2 from 'assets/welcome/img2.png';
 import img3 from 'assets/welcome/img3.png';
@@ -18,9 +16,9 @@ export default function WelcomeCard({ nombre }) {
             </CardHeader>
             <CardBody>
 
-                <div className='  md:flex' >
+                <div className='  md:flex gap-1' >
 
-                    <div className='flex flex-col justify-center items-center' >
+                    <div className='flex flex-col justify-center  items-center' >
                         <div className='h-56' >
                             <img
                                 className='w-72'
@@ -37,7 +35,7 @@ export default function WelcomeCard({ nombre }) {
                         </div>
 
                     </div>
-                    <div className='flex flex-col justify-center items-center' >
+                    <div className='flex flex-col justify-center items-center  mt-2 md:mt-0 ' >
                         <div className='h-56' >
                             <img
                                 className='w-52 h-52'

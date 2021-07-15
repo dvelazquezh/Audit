@@ -8,7 +8,8 @@ import Footer from 'components/Footer';
 
 // Tailwind CSS Style Sheet
 import 'assets/styles/tailwind.css';
-import { CreateTemplate } from 'pages/CreateTemplate';
+import { CreateTemplate } from 'pages/audit/CreateTemplate';
+
 
 function App() {
     return (

@@ -11,6 +11,6 @@ export const types = {
     uiFinishLoading: '[UI] Finish Error',
 
 
-    auditCountQuestion: '[AUDIT] Count Questions',
-    auditCountQuestionLess: '[AUDIT] Count Questions less',
+    auditSaveTemplate: '[AUDIT] Save Template',
+  
 }
