@@ -4,12 +4,12 @@ export default function footer() {
             <p className="text-gray-700 mb-6 lg:mb-0">
                 Copyright &copy; {new Date().getFullYear()}{' '}
                 <a
-                    href="https://www.creative-tim.com?ref=mtdk"
+                    href="http://orbitascr.com/"
                     target="_blank"
                     rel="noreferrer"
                     className="text-light-blue-500 hover:text-light-blue-700"
                 >
-                    Creative Tim
+                    OrbitasCR
                 </a>
             </p>
 
@@ -19,19 +19,9 @@ export default function footer() {
                         className="text-gray-700 hover:text-gray-900 font-medium block text-sm"
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.creative-tim.com/presentation?ref=mtdk"
+                        href="http://orbitascr.com/about.html"
                     >
                         About Us
-                    </a>
-                </li>
-                <li className="mr-6">
-                    <a
-                        className="text-gray-700 hover:text-gray-900 font-medium block text-sm"
-                        target="_blank"
-                        rel="noreferrer"
-                        href="https://www.creative-tim.com/blog/?ref=mtdk"
-                    >
-                        Blog
                     </a>
                 </li>
                 <li className="mr-6">
@@ -49,7 +39,7 @@ export default function footer() {
                         className="text-gray-700 hover:text-gray-900 font-medium block text-sm"
                         target="_blank"
                         rel="noreferrer"
-                        href="https://creative-tim.com/contact-us?ref=mtdk"
+                        href="http://orbitascr.com/contact.html"
                     >
                         Contact Us
                     </a>

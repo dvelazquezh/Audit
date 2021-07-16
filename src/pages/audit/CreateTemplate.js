@@ -13,13 +13,17 @@ import { useState } from 'react'
 import { useForm } from 'hooks/useForm'
 import { useDispatch } from 'react-redux'
 import { saveTemplate } from 'actions/audit'
+import { useHistory } from "react-router-dom";
 const short = require('short-uuid');
 
 export const CreateTemplate = () => {
 
+    const history = useHistory();
+
     const dispatch = useDispatch()
 
     const [values, handleInputChange, reset] = useForm({
+        id: short.uuid(),
         plantilla: '',
         restaurante: '',
         realizadoPor: '',
@@ -34,9 +38,8 @@ export const CreateTemplate = () => {
     const [error, seterror] = useState({})
     const { plantilla, restaurante, realizadoPor, gerente, nombreSesion } = values
 
-    const auditTemplate = { ...values, ...inputFiels }
+    const auditTemplate = { ...values, inputFiels }
 
-    console.log(auditTemplate);
 
     const handleChangeInput = (e, id) => {
         const newInputFields = inputFiels.map(i => {
@@ -77,7 +80,9 @@ export const CreateTemplate = () => {
         }
         dispatch( saveTemplate(auditTemplate) )
         Swal.fire('Agregado', 'Se agrego la plantilla','success')
-        // reset()
+        reset()
+        history.push('/audits');
+
     }
 
 
@@ -229,7 +234,7 @@ export const CreateTemplate = () => {
                                                 </div>
                                             </div>
                                             <div className='col-span-1 flex justify-evenly items-end mr-3' >
-                                                <button onClick={(e) => handleAddFields(e, inputFiel.id)} className='outline-none focus:outline-none' >
+                                                <button onClick={(e) => handleAddFields(e, inputFiel.id)} className='outline-none focus:outline-none mr-2' >
                                                     <Icon name="more" size="2xl" />
                                                 </button>
                                                 <button onClick={() => handleRemoveFields(inputFiel.id)} className='outline-none focus:outline-none' >

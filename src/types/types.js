@@ -12,5 +12,6 @@ export const types = {
 
 
     auditSaveTemplate: '[AUDIT] Save Template',
+    auditSelect: '[AUDIT] Select audit',
   
 }

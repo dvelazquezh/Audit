@@ -6,4 +6,9 @@ export const saveTemplate = (template) => ({
     payload:template
 })
 
+export const selectAudit = (id) => ({
+    type: types.auditSelect,
+    payload:id
+})
+
 

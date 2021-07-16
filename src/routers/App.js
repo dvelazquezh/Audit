@@ -9,6 +9,7 @@ import Footer from 'components/Footer';
 // Tailwind CSS Style Sheet
 import 'assets/styles/tailwind.css';
 import { CreateTemplate } from 'pages/audit/CreateTemplate';
+import { Audit } from 'pages/audit/Audit';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                     <Route exact path="/tables" component={Tables} />
                     <Route exact path="/maps" component={Maps} />
                     <Route exact path="/createTemplate" component={CreateTemplate} />
+                    <Route exact path="/audits" component={Audit} />
                     <Redirect from="*" to="/" />
                 </Switch>
                 <Footer />

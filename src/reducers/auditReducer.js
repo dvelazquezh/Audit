@@ -1,7 +1,8 @@
 import { types } from "types/types"
 
 const initialState = {
-    platilla: []
+    plantilla: [],
+    seleccionAuditoría:''
 }
 
 
@@ -11,7 +12,12 @@ export const auditReducer = (state = initialState, action) => {
         case types.auditSaveTemplate:
             return {
                 ...state,
-                platilla: [ ...state.platilla, action.payload]
+                plantilla: [ ...state.plantilla, action.payload]
+            }
+        case types.auditSelect:
+            return {
+                ...state,
+                seleccionAuditoría: action.payload
             }
         default:
             return state

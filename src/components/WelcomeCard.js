@@ -16,7 +16,7 @@ export default function WelcomeCard({ nombre }) {
             </CardHeader>
             <CardBody>
 
-                <div className='  md:flex gap-1' >
+                <div className='  md:flex gap-2' >
 
                     <div className='flex flex-col justify-center  items-center' >
                         <div className='h-56' >
@@ -45,9 +45,9 @@ export default function WelcomeCard({ nombre }) {
                         <p className='text-center font-medium' >Inicia tu auditoria</p>
                         <p className='text-center mt-5' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse!</p>
                         <div className='text-center mt-5' >
-                            <a
+                            <Link
                                 className=' border text-black border-primary py-2 px-3 rounded-2xl hover:bg-primary hover:opacity-75 hover:text-white'
-                                href="#">Crear platilla</a>
+                                to="/audits">Plantillas</Link>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center items-center'  >
