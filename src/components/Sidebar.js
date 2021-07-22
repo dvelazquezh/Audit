@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import AdminNavbar from './AdminNavbar';
-import Icon from '@material-tailwind/react/Icon';
 import H6 from '@material-tailwind/react/Heading6';
+import icono from '../assets/icon-auditas.png'
 
 export default function Sidebar() {
     const [showSidebar, setShowSidebar] = useState('-left-64');
@@ -17,12 +17,15 @@ export default function Sidebar() {
             >
                 <div className="flex-col items-stretch min-h-full flex-nowrap px-0 relative">
                     <a
-                        href="https://material-tailwind.com?ref=mtd"
+                        href="http://orbitascr.com/"
                         target="_blank"
                         rel="noreferrer"
                         className="mt-2 text-center w-full inline-block"
                     >
-                        <H6 color="gray">Orbitas </H6>
+                        <div className='flex justify-center items-center gap-3' >
+                        <img className='w-12' src={icono}/>
+                        <h2 className='font-semibold text-2xl text-gray-800' >Auditas</h2>
+                        </div>
                     </a>
                     <div className="flex flex-col">
                         <hr className="my-4 min-w-full" />
@@ -35,31 +38,31 @@ export default function Sidebar() {
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-primary text-white shadow-md"
                                 >
-                                    <Icon name="dashboard" size="2xl" />
+                                    <i className="fas fa-th-large fa-2x"></i>
                                     Dashboard
                                 </NavLink>
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/settings"
+                                    to="/createTemplate"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-primary text-white shadow-md"
                                 >
-                                    <Icon name="settings" size="2xl" />
-                                    Settings
+                                    <i className="fas fa-folder-plus fa-2x"></i>
+                                   Crear Plantillas
                                 </NavLink>
                             </li>
                             <li className="rounded-lg mb-2 ">
                                 <NavLink
-                                    to="/tables"
+                                    to="/audits"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-primary text-white shadow-md"
                                 >
-                                    <Icon name="toc" size="2xl" />
-                                    Tables
+                                   <i className="fas fa-list fa-2x"></i>
+                                  Plantillas
                                 </NavLink>
                             </li>
-                            <li className="rounded-lg mb-2 text-gray-700">
+                            {/* <li className="rounded-lg mb-2 text-gray-700">
                                 <NavLink
                                     to="/maps"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
@@ -68,54 +71,11 @@ export default function Sidebar() {
                                     <Icon name="map" size="2xl" />
                                     Maps
                                 </NavLink>
-                            </li>
-                            <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/login"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
-                                >
-                                    <Icon name="fingerprint" size="2xl" />
-                                    Login
-                                </a>
-                            </li>
-                            <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/register"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
-                                >
-                                    <Icon name="list_alt" size="2xl" />
-                                    Register
-                                </a>
-                            </li>
-                            <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/landing"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
-                                >
-                                    <Icon name="web" size="2xl" />
-                                    Landing Page
-                                </a>
-                            </li>
-                            <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/profile"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
-                                >
-                                    <Icon name="account_circle" size="2xl" />
-                                    Profile Page
-                                </a>
-                            </li>
+                            </li> */}
+                           
                         </ul>
 
-                        <ul className="flex-col min-w-full flex list-none absolute bottom-0">
+                        {/* <ul className="flex-col min-w-full flex list-none absolute bottom-0">
                             <li className="bg-gradient-to-tr from-light-blue-500 to-secondary px-4 rounded-lg text-white mb-2">
                                 <a
                                     href="https://material-tailwind.com/documentation/quick-start"
@@ -127,7 +87,7 @@ export default function Sidebar() {
                                     Documentation
                                 </a>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </div>

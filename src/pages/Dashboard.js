@@ -5,6 +5,8 @@ import PageVisitsCard from 'components/PageVisitsCard';
 import TrafficCard from 'components/TrafficCard';
 import CardTable from 'components/TableCard';
 import WelcomeCard from 'components/WelcomeCard';
+import ContactUs from '../components/audit/Email'
+
 
 export default function Dashboard() {
     return (
@@ -23,7 +25,9 @@ export default function Dashboard() {
                 </div>
             </div>
 
-            <div className="px-3 md:px-8">
+<ContactUs/>
+
+            {/* <div className="px-3 md:px-8">
                 <div className=" mx-auto max-w-full">
                     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 mb-4">
                         <StatusCard
@@ -68,9 +72,9 @@ export default function Dashboard() {
                         />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <div className="px-3 md:px-8 h-auto">
+            {/* <div className="px-3 md:px-8 h-auto">
                 <div className="container mx-auto max-w-full">
                     <div className="grid grid-cols-1 xl:grid-cols-5">
                         <div className="xl:col-start-1 xl:col-end-4 px-4 mb-14">
@@ -81,7 +85,7 @@ export default function Dashboard() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }

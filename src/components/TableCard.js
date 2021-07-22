@@ -5,7 +5,7 @@ export default function CardTable({ data }) {
 
     const dispatch = useDispatch()
 
-    const { id, plantilla, restaurante, realizadoPor, gerente } = data
+    const { id, plantilla, restaurante, realizadoPor, gerente, tipo } = data
            
 
     return (
@@ -21,6 +21,9 @@ export default function CardTable({ data }) {
             </th>
             <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
                 {gerente}
+            </th>
+            <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
+                {tipo}
             </th>
             <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
                 <a

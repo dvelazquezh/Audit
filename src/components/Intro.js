@@ -6,15 +6,15 @@ import './onda.css'
 
 const Intro = () => {
 
-    const signIn = async({ UserName, Password } ) => {
+    const signIn = async ({ UserName, Password }) => {
 
         try {
-         
-            const { data: token } = await audiApi.post('/Auth/Authenticate', { UserName, Password } );
-         
+
+            const { data: token } = await audiApi.post('/Auth/Authenticate', { UserName, Password });
+
             console.log(`token ${token}`);
             console.log("asdasdasdasd");
-            
+
             // dispatch({ 
             //     type: 'signUp',
             //     payload: {
@@ -34,15 +34,19 @@ const Intro = () => {
         }
     };
 
-    signIn({UserName:"demo", Password:"123456" })
+    signIn({ UserName: "demo", Password: "123456" })
 
     return (
         <>
             <div className='md:grid grid-cols-2' >
                 <div className='col-span-1 ml-5 '>
                     <div className='mx-10 auto ' >
-                        <h1 className='font-bold text-4xl md:text-6xl mt-20' >Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-                        <p className='mt-8 text-black' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus suscipit similique quasi numquam, consectetur cum asperiores unde sint aliquam natus error eum dolorum recusandae totam. Porro repudiandae quia quam possimus.</p>
+                        <h1 className='font-bold text-gray-800 text-4xl md:text-6xl mt-16' >Crea auditorías, cuestionarios, listas o encuestas.</h1>
+                        <h1 className='font-semibold text-gray-800 text-3xl md:text-2xl mt-6' >Un sistema el cual permite crear sus propias auditorias, cuestionarios, listas
+                            definir tipos de preguntas poder definir bien cuestionarios
+                            o Auditorías. Todo bajo una plataforma IOS y Android además de una plataforma WebAdmin donde se consolidaran las respuestas
+                            notas por restaurante o país </h1>
+                        <h1 className='font-bold text-gray-800 text-3xl md:text-5xl mt-10' >¡Regístrate y comienza!</h1>
                     </div>
                     <div className='mx-10 auto mt-10 flex ' >
                         <a href="#">
@@ -71,7 +75,7 @@ const Intro = () => {
                     src={imagen} /> */}
                 </div>
             </div>
-            <div className='relative md:bottom-40 lg:bottom-60 posicion' >
+            <div className=' fixed  top-auto right-0 left-0 bottom-0 posicion' >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#33f" fillOpacity="1" d="M0,96L40,128C80,160,160,224,240,240C320,256,400,224,480,208C560,192,640,192,720,186.7C800,181,880,171,960,160C1040,149,1120,139,1200,154.7C1280,171,1360,213,1400,234.7L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
             </div>
         </>

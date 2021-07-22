@@ -2,7 +2,7 @@ import { useForm } from "hooks/useForm";
 import React, { useEffect, useRef, useState } from "react";
 import {useDispatch} from 'react-redux'
 import { Link } from "react-router-dom";
-import logo from "../../assets/tulogoaqui.png"
+import logo from "../../assets/icon-auditas.png"
 import CrearCuenta from "./CrearCuenta";
 import { login, startLoginEmailPassword, startGoogleLogin } from "actions/auth";
 import { useSelector } from "react-redux";

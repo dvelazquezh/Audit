@@ -12,6 +12,7 @@ import { useDispatch } from 'react-redux';
 import { login } from 'actions/auth';
 import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
+import '../components/onda.css'
 
 
 // import { LoginScreen } from '../components/login/LoginScreen';
@@ -44,7 +45,9 @@ export const AppRouter = () => {
 
     if (checking) {
         return (
-            <h1>Espere..</h1>
+            <div className="preloader">
+            <img src="https://i.imgur.com/cWGLRFJ.png" alt=""/>
+          </div>
         )
     }
 

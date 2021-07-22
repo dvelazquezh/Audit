@@ -16,7 +16,7 @@ export default function WelcomeCard({ nombre }) {
             </CardHeader>
             <CardBody>
 
-                <div className='  md:flex gap-2' >
+                <div className='md:flex gap-2 2xl:gap-5  justify-around' >
 
                     <div className='flex flex-col justify-center  items-center' >
                         <div className='h-56' >
@@ -26,7 +26,7 @@ export default function WelcomeCard({ nombre }) {
                         </div>
                         <h1 className='text-center font-bold' >1</h1>
                         <p className='text-center font-medium' >Crear una plantilla.</p>
-                        <p className='text-center mt-5' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse!</p>
+                        <p className='text-center mt-5' >Crea plantillas como auditorías, cuestionarios, listas o encuestas</p>
 
                         <div className='text-center mt-5' >
                             <Link
@@ -42,8 +42,8 @@ export default function WelcomeCard({ nombre }) {
                                 src={img2} />
                         </div>
                         <h1 className='text-center font-bold' >2</h1>
-                        <p className='text-center font-medium' >Inicia tu auditoria</p>
-                        <p className='text-center mt-5' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse!</p>
+                        <p className='text-center font-medium' >Lista de auditorias</p>
+                        <p className='text-center mt-5' >Mira todas las plantillas creadas por las usuarios</p>
                         <div className='text-center mt-5' >
                             <Link
                                 className=' border text-black border-primary py-2 px-3 rounded-2xl hover:bg-primary hover:opacity-75 hover:text-white'
@@ -57,12 +57,12 @@ export default function WelcomeCard({ nombre }) {
                                 src={img3} />
                         </div>
                         <h1 className='text-center font-bold' >3</h1>
-                        <p className='text-center font-medium' >Ver detalles </p>
-                        <p className='text-center mt-5' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse!</p>
+                        <p className='text-center font-medium' >Reportes </p>
+                        <p className='text-center mt-5' >Mira los informes que puede generar desde auditas</p>
                         <div className='text-center mt-5' >
                             <a
                                 className=' border text-black border-primary py-2 px-3 rounded-2xl hover:bg-primary hover:opacity-75 hover:text-white'
-                                href="#">Crear platilla</a>
+                                href="#">Ver Reportes</a>
                         </div>
                     </div>
 
